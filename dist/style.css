@@ -31,3 +31,39 @@ footer a{color:#cdb78b}
  .controls{position:relative;bottom:auto;left:auto;right:auto;padding:3px 20px;background:none;pointer-events:auto}
  .fighttop{height:26px}#metrics{font-size:8px}.movementaux{flex-direction:column;gap:4px}.movementaux button{width:43px;height:43px}
 }
+
+/* Immersive touch deck: controls float over the stage, never reserve a strip. */
+.incombat{background:#090e13;overscroll-behavior:none}
+html:has(body.incombat){min-height:100%;height:100dvh;overflow-x:hidden}
+.incombat .controls{--key:clamp(48px,8.7svh,68px)}
+.incombat #joystick{background:radial-gradient(circle,#b5d1df0d 0 36%,#b5d1df07 37% 63%,#040a0f16 64%);border:1px solid #d9eef547;box-shadow:inset 0 0 0 10px #d5eaf507,0 2px 14px #0002;opacity:.45;transition:opacity .12s}
+.incombat #stickknob{background:radial-gradient(circle at 35% 25%,#d9edf040,#9abbcd18 60%);border:1px solid #e7f6ff77;box-shadow:0 3px 9px #0002,inset 0 1px 4px #fff2}
+.incombat #joystick.active{opacity:.9;border-color:#fff9}
+.incombat .attacks{position:relative;display:block;width:calc(var(--key)*3.55);height:calc(var(--key)*2.55)}
+.incombat .attacks button{position:absolute;width:var(--key);height:var(--key);background:#152b3f26;color:#f4f7edbb;box-shadow:inset 0 0 0 1px #d5e9f34d,0 2px 7px #0002;border:0;opacity:.45;transition:opacity .12s,transform .12s;backdrop-filter:none}
+.incombat .attacks [data-key=punch]{left:0;top:calc(var(--key)*1.22);width:calc(var(--key)*1.14);height:calc(var(--key)*1.14)}
+.incombat .attacks [data-key=kick]{left:calc(var(--key)*1.18);top:calc(var(--key)*1.13);width:calc(var(--key)*1.14);height:calc(var(--key)*1.14)}
+.incombat .attacks [data-key=p0]{left:calc(var(--key)*.25);top:calc(var(--key)*.11)}
+.incombat .attacks [data-key=p1]{left:calc(var(--key)*1.32);top:0}
+.incombat .attacks [data-key=p2]{left:calc(var(--key)*2.4);top:calc(var(--key)*.22)}
+.incombat .attacks [data-key=ult]{left:calc(var(--key)*2.52);top:calc(var(--key)*1.4);width:calc(var(--key)*.85);height:calc(var(--key)*.85);background:#5e274526}
+.incombat .attacks button.held{opacity:.96;transform:scale(.94);background:#bdd9f14d;filter:none!important}
+.incombat .attacks button.cooling{opacity:.27;filter:none;background:#07131b16}
+.incombat .attacks button.charged{animation:none;opacity:.65;box-shadow:inset 0 0 0 1px #f5bbf180,0 0 12px #d688d322}
+.incombat .ringtrack{stroke:#e4eff21a}.incombat .ringfill{stroke-width:2;filter:none}.incombat .abilitylabel{font-size:10px;letter-spacing:.4px;text-shadow:0 1px 2px #0008}.incombat .abilitytime{font-size:7px;color:#f0e3c3cc}
+@media(orientation:landscape){
+ body.incombat{position:fixed;inset:0;overflow:hidden;width:100%;height:100dvh}
+ body.incombat>header,body.incombat>footer{display:none}
+ .incombat #arena{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;margin:0;overflow:hidden}
+ .incombat #fight{position:absolute;inset:0;width:100%;height:100%;max-height:none;object-fit:fill;border:0;box-shadow:none}
+ .incombat .fighttop{position:absolute;top:0;left:0;right:0;height:27px;z-index:3;padding:2px max(8px,env(safe-area-inset-right)) 2px max(8px,env(safe-area-inset-left));pointer-events:none;background:linear-gradient(#08121d66,transparent)}
+ .incombat .fighttop button{pointer-events:auto;min-height:23px;padding:2px 7px;font-size:8px;background:#0a172933;border-color:#ffffff25;opacity:.7}
+ .incombat #net{font-size:8px}.incombat #metrics{font-size:8px}
+ .incombat .controls{position:absolute;inset:auto 0 max(8px,env(safe-area-inset-bottom));z-index:2;padding:0 max(12px,env(safe-area-inset-right)) 0 max(18px,env(safe-area-inset-left));pointer-events:none;align-items:flex-end;background:none}
+ .incombat .movement,.incombat .attacks{pointer-events:auto}
+ .incombat #joystick{width:clamp(92px,26svh,132px);height:clamp(92px,26svh,132px);margin-bottom:4px}
+ .incombat .fighthelp,.incombat .orientationhint{display:none}
+ .incombat #result{z-index:5;top:24%;left:25%;width:50%;padding:14px}
+ .incombat #result h2{font-size:26px;margin:5px 0 14px}
+}
+@media(orientation:portrait){.incombat .controls{--key:clamp(45px,12vw,64px);padding:10px}.incombat #fight{border:0}.incombat .attacks{height:calc(var(--key)*2.6)}}

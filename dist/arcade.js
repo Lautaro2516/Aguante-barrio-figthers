@@ -10,7 +10,7 @@ const stages=[
  {name:'FUERTE APACHE',area:'Ejército de los Andes · las torres',color:'#e2ac77',weather:'dust'}
 ];
 const atlas=new Image(),sceneAtlas=new Image(),sprites=[],oldFighter=fighter,oldBackground=background;
-atlas.src='assets/luchadores.webp';sceneAtlas.src='assets/escenarios.webp';
+atlas.src='assets/luchadores.webp';sceneAtlas.src='assets/escenarios-realistas.webp';
 let artReady=false,bgReady=false,visualClock=0,shake=0,superFlash=0,visualEvent=-1,cameraZoom=1;
 const attackFrames={};
 function extractAtlas(image){
@@ -32,7 +32,7 @@ fighter=function(c,id,x,y,scale=1,dir=1,pose=0,t=0){if(!artReady)return oldFight
 if(pose===1&&!hasFrame){let skin=id===3?'#eab08e':'#d9ab86';path(c,[[15*scale,-108*scale],[69*scale,-112*scale],[78*scale,-100*scale],[22*scale,-98*scale]],skin);rect(c,61*scale,-113*scale,20*scale,17*scale,'#e7bc95');line(c,[[68*scale,-110*scale],[68*scale,-99*scale]],'#9a6c59',2);for(let n=0;n<3;n++)line(c,[[-4-n*9,-108+n*7],[-36-n*8,-108+n*7]],'#fff9',2)}
 if(pose===2&&!hasFrame){path(c,[[0,-68*scale],[55*scale,-89*scale],[91*scale,-83*scale],[93*scale,-70*scale],[57*scale,-69*scale],[7,-47*scale]],roster[id][2]);path(c,[[78*scale,-90*scale],[98*scale,-89*scale],[107*scale,-75*scale],[79*scale,-73*scale]],'#252b3c');line(c,[[15,-95*scale],[52,-108*scale],[93,-99*scale]],'#fff8',3)}
 if(pose===3){c.strokeStyle='#83dfff';c.lineWidth=3;for(let i=0;i<3;i++){c.globalAlpha=.5-i*.13;c.beginPath();c.ellipse(33*scale,-90*scale,(20+i*6)*scale,(45+i*6)*scale,0,-1.5,1.5);c.stroke()}c.globalAlpha=1}c.restore()};
-background=function(c,s,w=960,h=500){if(!bgReady)return oldBackground(c,s%2,w,h);let cw=sceneAtlas.naturalWidth/2,ch=sceneAtlas.naturalHeight/4,st=stages[s]||stages[0];c.save();c.scale(w/960,h/500);c.imageSmoothingEnabled=false;
+background=function(c,s,w=960,h=500){if(!bgReady)return oldBackground(c,s%2,w,h);let cw=sceneAtlas.naturalWidth/2,ch=sceneAtlas.naturalHeight/4,st=stages[s]||stages[0];c.save();c.scale(w/960,h/500);c.imageSmoothingEnabled=true;
 // Background tile is scaled to put its walkable foreground exactly under the fighters.
 c.drawImage(sceneAtlas,(s%2)*cw,Math.floor(s/2)*ch,cw,ch,0,0,960,500);
 let time=visualClock;for(let i=0;i<34;i++){let px=(i*151+time*(st.weather==='rain'?-140:12))%1000,py=(i*83+time*(st.weather==='rain'?500:7))%500;if(st.weather==='rain'){line(c,[[px,py],[px-7,py+20]],'#c3e9ff66',1);if(i<10){c.strokeStyle='#98b4db55';c.beginPath();c.ellipse((i*117)%960,397+i%4*23,9+Math.sin(time*7+i)*4,2,0,0,7);c.stroke()}}else rect(c,px,py,st.weather==='confetti'?4:2,st.weather==='confetti'?3:2,st.weather==='confetti'?['#d67b68','#e3c65e','#95bbbc'][i%3]:'#ffdbad55')}

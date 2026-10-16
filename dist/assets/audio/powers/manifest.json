@@ -1,0 +1,375 @@
+{
+  "generation": "Piper neural synthesis with character-specific cadence and audio design; no browser speech synthesis and no cloned people",
+  "profiles": [
+    {
+      "id": 0,
+      "name": "Lautaro",
+      "model": "es/es_MX/ald/medium",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "speed": 0.83,
+      "pitch": 0.96,
+      "grit": 0.16
+    },
+    {
+      "id": 1,
+      "name": "Patricio",
+      "model": "es/es_ES/davefx/medium",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "speed": 0.94,
+      "pitch": 1.02,
+      "grit": 0.01
+    },
+    {
+      "id": 2,
+      "name": "El Tano",
+      "model": "es/es_ES/carlfm/x_low",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "speed": 0.84,
+      "pitch": 1.06,
+      "grit": 0.09
+    },
+    {
+      "id": 3,
+      "name": "La Colo",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 0.79,
+      "pitch": 0.97,
+      "grit": 0.18
+    },
+    {
+      "id": 4,
+      "name": "Doc Marta",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 0.96,
+      "pitch": 1.09,
+      "grit": 0
+    },
+    {
+      "id": 5,
+      "name": "El Rulo",
+      "model": "es/es_ES/mls_10246/low",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "speed": 0.9,
+      "pitch": 0.91,
+      "grit": 0.22
+    },
+    {
+      "id": 6,
+      "name": "La Nona",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 1.08,
+      "pitch": 0.9,
+      "grit": 0.05
+    },
+    {
+      "id": 7,
+      "name": "El Chapa",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "speed": 0.85,
+      "pitch": 0.94,
+      "grit": 0.13
+    }
+  ],
+  "lines": [
+    {
+      "character": 0,
+      "power": 0,
+      "text": "¡Llave voladora!",
+      "path": "assets/audio/powers/0-0.wav",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "sha256": "7f95b8dff84589966ad123560898b20a0c022332ab0e693524e8255b63bc0237"
+    },
+    {
+      "character": 0,
+      "power": 1,
+      "text": "¡Cortocircuito!",
+      "path": "assets/audio/powers/0-1.wav",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "sha256": "3e7dfbef029796e9bd75333121b0ab966a9afb4d287d9978ab053c5ee08247ff"
+    },
+    {
+      "character": 0,
+      "power": 2,
+      "text": "¡Porro del taller!",
+      "path": "assets/audio/powers/0-2.wav",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "sha256": "4018e972ab14e37161c8bb6a853a2b45e745f2de70666b7832b675e69591318f"
+    },
+    {
+      "character": 0,
+      "power": 3,
+      "text": "¡Maldito piperooooo!",
+      "path": "assets/audio/powers/0-3.wav",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "sha256": "ef7ee3d9ce90569eb88b63c21a3429cb6cc475894f5bede28b526260a6fb296b"
+    },
+    {
+      "character": 1,
+      "power": 0,
+      "text": "¡Tarjeta sin fondo!",
+      "path": "assets/audio/powers/1-0.wav",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "sha256": "764db211e824a6314ca93f47f981a846fd3241a731206c69ee73cb050113118c"
+    },
+    {
+      "character": 1,
+      "power": 1,
+      "text": "¡Interés compuesto!",
+      "path": "assets/audio/powers/1-1.wav",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "sha256": "fccbcc17d7f61f154be9b75b40c7c8ea8bc6e255b01a72c12e814f30013ee3fd"
+    },
+    {
+      "character": 1,
+      "power": 2,
+      "text": "¡Porro financiero!",
+      "path": "assets/audio/powers/1-2.wav",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "sha256": "60022d119a6a4567201e57bbe8c6fb0c9d8a0eac04c7e33bf32d452cd0d0304c"
+    },
+    {
+      "character": 1,
+      "power": 3,
+      "text": "¡Karakotoooooo!",
+      "path": "assets/audio/powers/1-3.wav",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "sha256": "b863a1f46c0816506484f70e3f17256ec40b7362e3897d73ba1397345f553178"
+    },
+    {
+      "character": 2,
+      "power": 0,
+      "text": "¡Tomatazo!",
+      "path": "assets/audio/powers/2-0.wav",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "sha256": "91a38cf997e6cc74d83e6702e1644e13efb4970b8f42d3c4dff33dd8cd4343a0"
+    },
+    {
+      "character": 2,
+      "power": 1,
+      "text": "¡Lluvia de papas!",
+      "path": "assets/audio/powers/2-1.wav",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "sha256": "8badf203633156b27b1c73b2f37dea15e4292c023a86efec316dcf06dd339630"
+    },
+    {
+      "character": 2,
+      "power": 2,
+      "text": "¡Cajón express!",
+      "path": "assets/audio/powers/2-2.wav",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "sha256": "8b7df29cd2de7b085b884f67a0703ac6fa5ba5ad121c0151640381b1ddd1a451"
+    },
+    {
+      "character": 2,
+      "power": 3,
+      "text": "¡Ofertón del día!",
+      "path": "assets/audio/powers/2-3.wav",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "sha256": "f66cbf3c056b0eecca001040c6cea77ff93ab2c35c127190291e2b997a808bfa"
+    },
+    {
+      "character": 3,
+      "power": 0,
+      "text": "¡Chorizo boom!",
+      "path": "assets/audio/powers/3-0.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "910378bff1f16cd2003efa9ad5ce3cc63b661a1233327ce6742835238f9eff12"
+    },
+    {
+      "character": 3,
+      "power": 1,
+      "text": "¡Gancho de mostrador!",
+      "path": "assets/audio/powers/3-1.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "b8a40fc1903b09ae11920901294b9dcc980971a1978dbac45e1aa27a8db8c875"
+    },
+    {
+      "character": 3,
+      "power": 2,
+      "text": "¡Asado giratorio!",
+      "path": "assets/audio/powers/3-2.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "0ca904175d5712d34b44591bad025462fbd81a519d85899957b269b457f23f16"
+    },
+    {
+      "character": 3,
+      "power": 3,
+      "text": "¡Todo a la parrilla!",
+      "path": "assets/audio/powers/3-3.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "06d29552b77eed361a74a927fb1fb20bcf73df8b26c1390efcf58825339e960a"
+    },
+    {
+      "character": 4,
+      "power": 0,
+      "text": "¡Receta voladora!",
+      "path": "assets/audio/powers/4-0.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "e7fac41943f65b00acf624975f6c9e96d1f4cfbdaf85671c3f5bec56fc3e680e"
+    },
+    {
+      "character": 4,
+      "power": 1,
+      "text": "¡Pulso eléctrico!",
+      "path": "assets/audio/powers/4-1.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "2fe38f876118eeada9bf6240465c79cc56146ace11102942a49e05c3cd827a61"
+    },
+    {
+      "character": 4,
+      "power": 2,
+      "text": "¡Guardia activa!",
+      "path": "assets/audio/powers/4-2.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "b68f2c26d01260f5ee0d450c850ac1d018ae0610027ef8eb9bb4c0d0f4e0b879"
+    },
+    {
+      "character": 4,
+      "power": 3,
+      "text": "¡Código barrio!",
+      "path": "assets/audio/powers/4-3.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "d34e4738519ef777cfb26580ee00a0265215e12dd5446877c85d1ab914d27ab2"
+    },
+    {
+      "character": 5,
+      "power": 0,
+      "text": "¡Bocinazo!",
+      "path": "assets/audio/powers/5-0.wav",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "sha256": "8719d1307c165366d5be16c0bc87ea45819d87fd3cea8bdf76033c0242df1abe"
+    },
+    {
+      "character": 5,
+      "power": 1,
+      "text": "¡Rueda suelta!",
+      "path": "assets/audio/powers/5-1.wav",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "sha256": "6b3ade882f7fb7c3998ecf88e3c7ec225b4fcf84bc9ebdc60d0f7e6c2d9611e6"
+    },
+    {
+      "character": 5,
+      "power": 2,
+      "text": "¡Acople bravo!",
+      "path": "assets/audio/powers/5-2.wav",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "sha256": "6ad07303b11f657a313ecce4a6b20e67a6b3e89c23b3045f7c21344049ec3d6d"
+    },
+    {
+      "character": 5,
+      "power": 3,
+      "text": "¡Pasó el camión!",
+      "path": "assets/audio/powers/5-3.wav",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "sha256": "d976e1fdca595ab2491995e471f7d27061a06711468e9077bf57e734e5c966f6"
+    },
+    {
+      "character": 6,
+      "power": 0,
+      "text": "¡Ñoqui misil!",
+      "path": "assets/audio/powers/6-0.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "ba172232d7ba4cbc9d5dc3277415b11772ceb89c2eac7322604ec92012693c8a"
+    },
+    {
+      "character": 6,
+      "power": 1,
+      "text": "¡Sartenazo!",
+      "path": "assets/audio/powers/6-1.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "fb6da7072f7457af923a4fd8ee9e3c9b6d8b4134ab9c1b78e227af1b4d7b291e"
+    },
+    {
+      "character": 6,
+      "power": 2,
+      "text": "¡Nube de harina!",
+      "path": "assets/audio/powers/6-2.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "24849714d6df027ef654cdae3e549bc00156a35e7e0ad1e2efe6e00eb1c8dd54"
+    },
+    {
+      "character": 6,
+      "power": 3,
+      "text": "¡A comer, carajo!",
+      "path": "assets/audio/powers/6-3.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "sha256": "e0a570d154ac09fac15fc39a65969083e13bcd7b63660779a4523711ce9baa2b"
+    },
+    {
+      "character": 7,
+      "power": 0,
+      "text": "¡Tuercazo!",
+      "path": "assets/audio/powers/7-0.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "sha256": "ffc277a84a677cbadb38f911df1c74b7dcb589d9728b77b217c00a2829669ec4"
+    },
+    {
+      "character": 7,
+      "power": 1,
+      "text": "¡Gato hidráulico!",
+      "path": "assets/audio/powers/7-1.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "sha256": "38b030a468cfa4a2eefcd5ed0c01d4ea02b7f65783d57ce4c66b1787752315ea"
+    },
+    {
+      "character": 7,
+      "power": 2,
+      "text": "¡Aceite turbo!",
+      "path": "assets/audio/powers/7-2.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "sha256": "51138653cd59d840e11a04de84c08e2608e0dcb1e4eabe3b324312d18726c077"
+    },
+    {
+      "character": 7,
+      "power": 3,
+      "text": "¡Rectificada total!",
+      "path": "assets/audio/powers/7-3.wav",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "sha256": "bbeacbf9695c575958a02d5dbb3003b1876a2fd5b19b08067ad99f8f39553bff"
+    }
+  ]
+}

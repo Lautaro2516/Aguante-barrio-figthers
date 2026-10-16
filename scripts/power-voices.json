@@ -1,0 +1,134 @@
+{
+  "profiles": [
+    {
+      "id": 0,
+      "name": "Lautaro",
+      "model": "es/es_MX/ald/medium",
+      "voice": "es_MX-ald-medium",
+      "speaker": 0,
+      "speed": 0.83,
+      "pitch": 0.96,
+      "grit": 0.16
+    },
+    {
+      "id": 1,
+      "name": "Patricio",
+      "model": "es/es_ES/davefx/medium",
+      "voice": "es_ES-davefx-medium",
+      "speaker": 0,
+      "speed": 0.94,
+      "pitch": 1.02,
+      "grit": 0.01
+    },
+    {
+      "id": 2,
+      "name": "El Tano",
+      "model": "es/es_ES/carlfm/x_low",
+      "voice": "es_ES-carlfm-x_low",
+      "speaker": 0,
+      "speed": 0.84,
+      "pitch": 1.06,
+      "grit": 0.09
+    },
+    {
+      "id": 3,
+      "name": "La Colo",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 0.79,
+      "pitch": 0.97,
+      "grit": 0.18
+    },
+    {
+      "id": 4,
+      "name": "Doc Marta",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 0.96,
+      "pitch": 1.09,
+      "grit": 0
+    },
+    {
+      "id": 5,
+      "name": "El Rulo",
+      "model": "es/es_ES/mls_10246/low",
+      "voice": "es_ES-mls_10246-low",
+      "speaker": 0,
+      "speed": 0.9,
+      "pitch": 0.91,
+      "grit": 0.22
+    },
+    {
+      "id": 6,
+      "name": "La Nona",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 1,
+      "speed": 1.08,
+      "pitch": 0.9,
+      "grit": 0.05
+    },
+    {
+      "id": 7,
+      "name": "El Chapa",
+      "model": "es/es_ES/sharvard/medium",
+      "voice": "es_ES-sharvard-medium",
+      "speaker": 0,
+      "speed": 0.85,
+      "pitch": 0.94,
+      "grit": 0.13
+    }
+  ],
+  "lines": [
+    [
+      "¡Llave voladora!",
+      "¡Cortocircuito!",
+      "¡Porro del taller!",
+      "¡Maldito piperooooo!"
+    ],
+    [
+      "¡Tarjeta sin fondo!",
+      "¡Interés compuesto!",
+      "¡Porro financiero!",
+      "¡Karakotoooooo!"
+    ],
+    [
+      "¡Tomatazo!",
+      "¡Lluvia de papas!",
+      "¡Cajón express!",
+      "¡Ofertón del día!"
+    ],
+    [
+      "¡Chorizo boom!",
+      "¡Gancho de mostrador!",
+      "¡Asado giratorio!",
+      "¡Todo a la parrilla!"
+    ],
+    [
+      "¡Receta voladora!",
+      "¡Pulso eléctrico!",
+      "¡Guardia activa!",
+      "¡Código barrio!"
+    ],
+    [
+      "¡Bocinazo!",
+      "¡Rueda suelta!",
+      "¡Acople bravo!",
+      "¡Pasó el camión!"
+    ],
+    [
+      "¡Ñoqui misil!",
+      "¡Sartenazo!",
+      "¡Nube de harina!",
+      "¡A comer, carajo!"
+    ],
+    [
+      "¡Tuercazo!",
+      "¡Gato hidráulico!",
+      "¡Aceite turbo!",
+      "¡Rectificada total!"
+    ]
+  ]
+}

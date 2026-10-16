@@ -1,5 +1,7 @@
 # Aguante · Barrio Fighters
 
+Actualización inmersiva: el combate ocupa todo el viewport horizontal, con controles translúcidos en arco y joystick superpuesto. Se intenta pantalla completa nativa desde una pulsación en móviles compatibles; Safari puede conservar su interfaz. Siete escenarios originales de aspecto realista incorporan movimiento ambiental discreto. Los 32 poderes tienen audios de voz propios, con el nombre exacto de cada movimiento, sintetizados y diseñados en ocho perfiles sobre cinco modelos/seis locutores base. Son voces sintéticas, no ocho actores ni clones. Créditos y fuentes: dist/CREDITOS.txt. Arte: ART-DIRECTION.md. Se incluyen pruebas de correspondencia de las 32 líneas, hashes de audio y eventos simultáneos.
+
 Juego de lucha 2D original para navegador. Ocho personajes, siete escenarios, tres especiales y una ulti por personaje. Rondas de 60 segundos, 100 de vida, mejor de tres.
 
 ## Estado real de entrega

@@ -5,7 +5,10 @@ function client(){const ws=new WebSocket(origin.replace('https:','wss:')+'/socke
 const type=t=>m=>m.type===t;
 (async()=>{try{
  const health=await fetch(origin+'/healthz');assert.equal(health.status,200);assert.equal((await health.json()).protocol,5);checks.push('public HTTPS health');
- const html=await (await fetch(origin)).text();assert(html.includes('engine.js'));const config=await(await fetch(origin+'/config.json')).json();assert.equal(config.websocket,'same-origin');
+ const html=await (await fetch(origin)).text();assert(html.includes('engine.js'));assert(html.includes('voices-personalizadas.js'));assert(html.includes('stage-life.js'));const config=await(await fetch(origin+'/config.json')).json();assert.equal(config.websocket,'same-origin');
+ const E=require('../dist/engine.js'),crypto=require('node:crypto'),voiceManifest=await(await fetch(origin+'/assets/audio/powers/manifest.json')).json(),normalize=s=>s.replace(/[¡!]/g,'').trim().toLocaleUpperCase('es');assert.equal(voiceManifest.lines.length,32);
+ for(const line of voiceManifest.lines){assert.equal(normalize(line.text),normalize(E.POWERS[line.character][line.power]));const response=await fetch(origin+'/'+line.path);assert.equal(response.status,200);assert(response.headers.get('content-type').includes('audio/wav'));const wav=Buffer.from(await response.arrayBuffer());assert.equal(wav.toString('ascii',0,4),'RIFF');assert.equal(crypto.createHash('sha256').update(wav).digest('hex'),line.sha256)}checks.push('32 exact spoken power names, public WAV files and integrity hashes');
+ assert.equal((await fetch(origin+'/assets/escenarios-realistas.webp',{method:'HEAD'})).status,200);checks.push('realistic background atlas');
  for(const url of ['/assets/animation/0.webp','/assets/animation/1.webp','/assets/escenarios.webp','/assets/audio/announcer-fight.mp3'])assert.equal((await fetch(origin+url,{method:'HEAD'})).status,200);checks.push('public frontend/config/art/audio');
  const a=client();await a.wait(type('welcome'));a.send({type:'create',character:0,name:'QA A'});const sa=await a.wait(type('session'));
  const b=client();await b.wait(type('welcome'));b.send({type:'join',code:'bad'});assert.equal((await b.wait(type('error'))).code,'INVALID_CODE');b.send({type:'join',code:sa.room,character:1,name:'QA B'});const sb=await b.wait(type('session'));checks.push('create, invalid code, join');

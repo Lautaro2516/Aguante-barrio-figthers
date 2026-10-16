@@ -21,5 +21,31 @@ https://opengameart.org/content/grunts-male-death-and-pain
 
 PeerJS — MIT — https://peerjs.com/
 
-Las voces son gritos de combate y avisos de locutor en inglés.
-Las frases argentinas de los personajes se muestran en pantalla.
+Los sonidos anteriores son gritos de combate y avisos de locutor en inglés.
+
+PODERES HABLADOS · 32 líneas originales / ocho perfiles de personaje
+Síntesis neuronal Piper (no voces clonadas de Lautaro, Patricio ni otras personas).
+Cinco modelos base y seis locutores base; La Colo, Doc Marta y La Nona comparten
+la locutora base pero tienen cadencia, resonancia y saturación propias. No se
+presentan como ocho actores ni como voces rioplatenses profesionales.
+Piper, herramienta de generación MIT: https://github.com/rhasspy/piper
+Modelos: https://huggingface.co/rhasspy/piper-voices
+- es_MX/ald/medium: rmcpantoja, Ald Mexican Spanish speech dataset, Unlicense.
+  https://huggingface.co/datasets/rmcpantoja/Ald_Mexican_Spanish_speech_dataset
+- es_ES/davefx/medium: OHF-Voice voice-datasets, CC0.
+  https://github.com/OHF-Voice/voice-datasets
+- es_ES/carlfm/x_low: carlfm01/my-speech-datasets, dominio público.
+  https://github.com/carlfm01/my-speech-datasets
+- es_ES/sharvard/medium: Spanish Harvard corpus, CC BY 3.0.
+  https://datashare.ed.ac.uk/handle/10283/574
+  https://creativecommons.org/licenses/by/3.0/
+- es_ES/mls_10246/low: Multilingual LibriSpeech, CC BY 4.0.
+  https://www.openslr.org/94/
+  https://creativecommons.org/licenses/by/4.0/
+Se sintetizaron textos propios y se adaptaron cadencia, tono, saturación, volumen
+y formato PCM. Estos nuevos WAV se ofrecen con atribución bajo CC BY 4.0.
+Las fichas originales y perfiles se conservan en assets/audio/powers/.
+
+ESCENARIOS REALISTAS
+Atlas original generado con ImageGen para este proyecto, no fotografías
+documentales de las ubicaciones. Animación ambiental original en stage-life.js.
