@@ -1,5 +1,13 @@
 # Evidencia y pendientes
 
+## Actualización inmersiva publicada · 16 de octubre de 2026
+
+Commit a32f307fae7055bc113b8d996abeafdcedb87fe7. Render confirmó live el despliegue dep-db8pk9qvcj2c73aougb0, con 26 pruebas aprobadas y cero fallos. A las 03:30:59 UTC, scripts/public-smoke.cjs aprobó la partida completa y el flujo de salas/revancha/reconexión contra HTTPS/WSS públicos. También descargó los 32 WAV, comprobó formato, Content-Type audio/wav, hash y correspondencia exacta de sus textos con los poderes del motor. Confirmó el nuevo atlas y los scripts de ambiente y voces.
+
+En Chromium integrado 844×390, el lienzo público mide exactamente 844×390 y cubre el viewport. Botones translúcidos en arco, activación de P1 y recarga observadas; cero errores/avisos capturados en esa revisión. Indicador puntual de 59–60 FPS. La animación ambiental es visual y no altera las partidas. Son pruebas de navegador y dos clientes Node automatizados desde una máquina; siguen pendientes Android/iPhone físicos, multitáctil real y valoración auditiva en los teléfonos. Las voces son sintéticas con perfiles diseñados, no actores exclusivos.
+
+Las pruebas anteriores se conservan a continuación como historial.
+
 ## Ejecutado
 
 23 pruebas Node pasan (0 fallos): validación de entradas; movimiento y límites; colisiones; cruce aéreo y orientación; aterrizaje; startup y alcance de ataques; bloqueo y retroceso; 32 poderes y recursos; ataques aéreos; victoria, empate y abandono; determinismo; predicción sin modificar daño; registro de toques breves; defensa por retroceso desde ambos lados y en el propio cuadro de impacto; salas y códigos; preparación mutua; rechazo de un tercer jugador; secuencias y estados falsificados; reanudación con rotación de token; expiración, revancha y limpieza.
