@@ -3,7 +3,7 @@ AGUANTE · BARRIO FIGHTERS — DREAM MATCH
 8 personajes, 7 escenarios, 30 dibujos por personaje y 4 poderes por luchador.
 Lautaro y Patricio conservan sus poderes y frases propias.
 
-Para jugar online se necesita ejecutar el servidor Node o usar su futura URL pública.
+URL pública: https://aguante-barrio-fighters.onrender.com
 Práctica funciona sin crear sala. Para online, los dos abren la misma versión:
 1. Cada uno elige personaje. El creador elige escenario.
 2. Uno toca CREAR SALA y comparte la invitación o el código.

@@ -4,7 +4,7 @@ Juego de lucha 2D original para navegador. Ocho personajes, siete escenarios, tr
 
 ## Estado real de entrega
 
-La implementación y 23 pruebas automatizadas locales pasan. Se preparó un servidor autoritativo Node/WebSocket y el despliegue Render Free. **No hay despliegue público confirmado todavía.** Render está conectado y el propietario autorizó el espacio «Lautaro dominguez». Está pendiente conectar GitHub y subir el repositorio para que Render pueda descargarlo. No se presenta una URL localhost como enlace público.
+Publicado: **https://aguante-barrio-fighters.onrender.com**. Render Free, espacio autorizado «Lautaro dominguez». Compilación, verificación y 23 pruebas aprobadas en Render. Dos clientes Node contra HTTPS/WSS públicos comprobaron combate, resultados coincidentes, revancha, reconexión y abandono. Pendiente: prueba con dos teléfonos físicos en redes domésticas diferentes; no se presenta la automatización como esa prueba.
 
 ## Jugar
 
