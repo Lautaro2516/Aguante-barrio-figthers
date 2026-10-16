@@ -1,0 +1,22 @@
+AGUANTE · BARRIO FIGHTERS — DREAM MATCH
+
+8 personajes, 7 escenarios, 30 dibujos por personaje y 4 poderes por luchador.
+Lautaro y Patricio conservan sus poderes y frases propias.
+
+Para jugar online se necesita ejecutar el servidor Node o usar su futura URL pública.
+Práctica funciona sin crear sala. Para online, los dos abren la misma versión:
+1. Cada uno elige personaje. El creador elige escenario.
+2. Uno toca CREAR SALA y comparte la invitación o el código.
+3. El otro introduce el código y toca ENTRAR.
+4. Ambos confirman ESTOY LISTO para iniciar la cuenta atrás.
+Mantener las pestañas abiertas y el móvil desbloqueado.
+El servidor WebSocket calcula impactos y resultados para ambos jugadores.
+
+Stick analógico: mover, diagonal arriba saltar y abajo agacharse.
+Retroceder respecto al rival bloquea automáticamente al recibir un golpe.
+No hay botones táctiles separados de salto ni guardia. Podés cruzar por encima del rival.
+GOLPE/PATADA cargan energía. P1/P2/P3 tienen recarga. ULTI consume100.
+Gana el mejor de3 asaltos. Sonido se habilita al tocar la pantalla.
+Teclado A/D mover,W saltar,S cubrir,J golpe,K patada,U/I/O poderes,L ulti.
+
+Audio y licencias: dist/CREDITOS.txt.

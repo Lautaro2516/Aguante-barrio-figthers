@@ -1,0 +1,46 @@
+{
+  "male": [
+    "male-0.mp3",
+    "male-1.mp3",
+    "male-2.mp3",
+    "male-3.mp3",
+    "male-4.mp3",
+    "male-5.mp3",
+    "male-6.mp3",
+    "male-7.mp3",
+    "male-8.mp3",
+    "male-9.mp3",
+    "male-10.mp3",
+    "male-11.mp3"
+  ],
+  "femaleAttack": [
+    "female-attack-0.mp3",
+    "female-attack-1.mp3",
+    "female-attack-2.mp3",
+    "female-attack-3.mp3",
+    "female-attack-4.mp3",
+    "female-attack-5.mp3"
+  ],
+  "femaleHurt": [
+    "female-hurt-0.mp3",
+    "female-hurt-1.mp3",
+    "female-hurt-2.mp3",
+    "female-hurt-3.mp3",
+    "female-hurt-4.mp3",
+    "female-hurt-5.mp3",
+    "female-hurt-6.mp3"
+  ],
+  "announcer": {
+    "ready": "announcer-ready.mp3",
+    "fight": "announcer-fight.mp3",
+    "round_1": "announcer-round_1.mp3",
+    "round_2": "announcer-round_2.mp3",
+    "round_3": "announcer-round_3.mp3",
+    "round_4": "announcer-round_4.mp3",
+    "round_5": "announcer-round_5.mp3",
+    "you_win": "announcer-you_win.mp3",
+    "you_lose": "announcer-you_lose.mp3",
+    "combo": "announcer-combo.mp3",
+    "game_over": "announcer-game_over.mp3"
+  }
+}

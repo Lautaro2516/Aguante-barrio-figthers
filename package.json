@@ -1,0 +1,10 @@
+{
+  "name": "aguante-barrio-fighters",
+  "version": "5.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "description": "Original mobile fighting game with an authoritative WebSocket server",
+  "engines": {"node": ">=22"},
+  "scripts": {"start": "node server/index.cjs", "build": "node scripts/build.cjs", "test": "node --test tests/*.test.cjs", "verify": "node scripts/verify.cjs"},
+  "dependencies": {"ws": "8.22.0"}
+}

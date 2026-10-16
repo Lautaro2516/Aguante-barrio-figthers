@@ -1,0 +1,25 @@
+AGUANTE · BARRIO FIGHTERS — Créditos
+
+Personajes, escenarios y dibujos de animación originales para este proyecto.
+Inspiración en los juegos de pelea arcade de los años 90. No se incluyen assets de SNK.
+
+Voces descargadas y editadas (recorte, normalización, conversión MP3 y variación de tono):
+
+Kenney — Voiceover Pack Fighter — CC0
+https://kenney.nl/assets/voiceover-pack-fighter
+
+AuraVoice / Nocturnal_Vanguard — Female Hurt Grunts & Groans — CC0
+https://opengameart.org/content/female-hurt-grunts-groans
+
+SkyRae — Female Warrior Grunts — CC BY 3.0
+https://opengameart.org/content/female-warrior-grunts
+https://creativecommons.org/licenses/by/3.0/
+Se adaptaron las grabaciones a clips cortos de combate, con volumen y tono modificados.
+
+thebardofblasphemy — grunts of male death and pain — CC0
+https://opengameart.org/content/grunts-male-death-and-pain
+
+PeerJS — MIT — https://peerjs.com/
+
+Las voces son gritos de combate y avisos de locutor en inglés.
+Las frases argentinas de los personajes se muestran en pantalla.

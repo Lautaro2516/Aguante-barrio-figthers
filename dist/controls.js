@@ -1,0 +1,15 @@
+'use strict';
+const stick=document.querySelector('#joystick'),knob=document.querySelector('#stickknob');
+let stickPointer=null,stickBox=null;
+function setStick(nx,ny){let length=Math.hypot(nx,ny);if(length>1){nx/=length;ny/=length}let dead=.14,amount=Math.hypot(nx,ny);local.axisX=amount<dead?0:nx;local.left=nx<-.15;local.right=nx>.15;local.jump=ny<-.5;local.down=ny>.5;knob.style.transform=`translate(${nx*33}px,${ny*33}px)`;stick.classList.toggle('active',amount>dead);stick.setAttribute('aria-valuetext',amount<dead?'Centro':ny<-.5?'Salto':ny>.5?'Agachado':nx>0?'Derecha':'Izquierda')}
+function updateStick(e){if(e.pointerId!==stickPointer)return;const r=stickBox;setStick((e.clientX-r.left-r.width/2)/(r.width*.4),(e.clientY-r.top-r.height/2)/(r.height*.4))}
+stick.onpointerdown=e=>{if(stickPointer!==null)return;e.preventDefault();stickPointer=e.pointerId;stickBox=stick.getBoundingClientRect();stick.setPointerCapture(e.pointerId);updateStick(e)};
+stick.onpointermove=e=>{if(e.pointerId===stickPointer){e.preventDefault();updateStick(e)}};
+function releaseStick(e){if(e&&e.pointerId!==undefined&&e.pointerId!==stickPointer)return;stickPointer=null;setStick(0,0)}
+stick.onpointerup=releaseStick;stick.onpointercancel=releaseStick;stick.onlostpointercapture=releaseStick;
+window.addEventListener('blur',releaseStick);document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseStick()});
+// Up and up-diagonals jump through the stick; retreat guards when an impact arrives.
+const abilityButtons=[...document.querySelectorAll('.attacks [data-key]')];
+for(const b of abilityButtons){const key=b.dataset.key,title=key==='ult'?'ULTI':/^p[012]$/.test(key)?'P'+(+key[1]+1):key==='punch'?'GOLPE':'PATADA';b.innerHTML=`<svg class="coolring" viewBox="0 0 64 64" aria-hidden="true"><circle class="ringtrack" cx="32" cy="32" r="29"/><circle class="ringfill" cx="32" cy="32" r="29"/></svg><span class="abilitylabel">${title}</span><span class="abilitytime"></span>`;b.setAttribute('aria-label',title)}
+function abilityState(k,p){if(/^p[012]$/.test(k)){let i=+k[1],remaining=p.cool[i];return{progress:Math.max(0,Math.min(1,1-remaining/COOLDOWNS[i])),remaining,ready:remaining<=0,text:remaining>0?remaining.toFixed(1)+'s':'LISTO'}}if(k==='ult')return{progress:p.en/100,remaining:0,ready:p.en>=100,text:p.en>=100?'LISTA':Math.floor(p.en)+'%'};return{progress:1,remaining:0,ready:true,text:''}}
+function updateAbilities(){if(game&&playing){let p=game.p[host?0:1];for(const b of abilityButtons){let k=b.dataset.key,s=abilityState(k,p);b.style.setProperty('--progress',s.progress);b.classList.toggle('cooling',!s.ready);b.classList.toggle('charged',k==='ult'&&s.ready);b.setAttribute('aria-label',(k==='ult'?'ULTI':/^p[012]$/.test(k)?'P'+(+k[1]+1):k==='punch'?'GOLPE':'PATADA')+' · '+s.text);b.setAttribute('aria-disabled',String(!s.ready));b.querySelector('.abilitytime').textContent=s.text;b.title=s.ready?'Disponible':'Recargando: '+s.text}}requestAnimationFrame(updateAbilities)}requestAnimationFrame(updateAbilities);
